@@ -7,9 +7,6 @@ stocksMarkets is a scraping stocks application
 ## Technology Stack
 
 - [Python][0]
-- [Selenium][2] 
-- [PantomJs][3]
-- [SQLite][4]
 
 
 ## Installation Guide
@@ -55,6 +52,4 @@ Make sure you install all the required dependencies before running stocksMarkets
 
 [0]: https://www.python.org/
 [1]: https://www.python.org/downloads/
-[2]: http://www.seleniumhq.org/
-[3]: http://phantomjs.org/
-[4]: https://www.sqlite.org/
+
