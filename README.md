@@ -1,8 +1,8 @@
-# stocksMarkets
+# validateTransaction
 
-stocksMarkets is a scraping stocks application
+validateTransaction is a library to validate transactions
 
-**stocksMarkets** built with [Python][0]
+**validateTransaction** built with [Python][0]
 
 ## Technology Stack
 
@@ -28,8 +28,8 @@ stocksMarkets is a scraping stocks application
 ### 4 Clone the repository
 
     # Create a project directory 
-	# Clone stocksMarkets repository into project directory
-    $ git clone git@github.com:malrefai/stocksMarkets.git <YOUR_PROJECT_DIR>
+	# Clone validateTransaction repository into project directory
+    $ git clone git@github.com:malrefai/validateTransaction.git <YOUR_PROJECT_DIR>
     $ cd <YOUR_PROJECT_DIR>
 
 
