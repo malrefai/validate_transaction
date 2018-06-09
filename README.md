@@ -35,7 +35,7 @@ validateTransaction is a library to validate transactions
     $ cd <YOUR_PROJECT_DIR>
 
 
-### 5. Install dependencies
+### 6. Install dependencies
 
 On the project root there is a requirements.txt file. 
 
@@ -44,7 +44,7 @@ Make sure you install all the required dependencies before running validateTrans
     $ pip install -r requirements.txt
 
 
-### 6. Run
+### 7. Run
 
     $ python main.py
 
