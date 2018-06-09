@@ -24,8 +24,10 @@ validateTransaction is a library to validate transactions
 	# Create and activate virtual env
 	$ virtualenv <ENV_DIR>
 	$ . <ENV_DIR>/bin/activate
+	
+### 4. Fork the repository
 
-### 4. Clone the repository
+### 5. Clone the repository
 
     # Create a project directory 
 	# Clone validateTransaction repository into project directory
@@ -34,21 +36,25 @@ validateTransaction is a library to validate transactions
 
 
 ### 5. Install dependencies
+
 On the project root there is a requirements.txt file. 
 
-Make sure you install all the required dependencies before running stocksMarkets
+Make sure you install all the required dependencies before running validateTransaction
 
     $ pip install -r requirements.txt
 
 
 ### 6. Run
+
     $ python main.py
 
 	
 ## Notes
+
 The library
 
 ## Copyright
+
 Copyright (c) 2018 Mohammad Alrefai. See LICENSE.txt for further details.
 
 ## License
