@@ -1,6 +1,6 @@
 """
 demo.py
-    is an app demo to test library that validate transactions
+    is an app demo use the library that validate transactions
         Created on  :   June 9, 2016
         Author      :   Mohammad Alrefai
 """

@@ -1,6 +1,6 @@
 """
 type.py
- is a module contains custom class types for data in transaction.
+ is a module contains custom types for data in transaction.
 
         Created on  :   June 10, 2018
         Author      :   Mohammad Alrefai
