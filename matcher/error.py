@@ -10,8 +10,7 @@ error.py
 class SchemaError(Exception):
     """Error during Schema validation."""
 
-    def __init__(self, autos, errors=None):
-        self.autos = autos if type(autos) is list else [autos]
+    def __init__(self, errors):
         self.errors = errors if type(errors) is list else [errors]
         Exception.__init__(self, self.code)
 
@@ -21,7 +20,8 @@ class SchemaError(Exception):
         Removes duplicates values in auto and error list.
         parameters.
         """
-        def uniq(seq):
+
+        def unique(seq):
             """
             Utility function that removes duplicate.
             """
@@ -29,11 +29,9 @@ class SchemaError(Exception):
             seen_add = seen.add
             # This way removes duplicates while preserving the order.
             return [x for x in seq if x not in seen and not seen_add(x)]
-        data_set = uniq(i for i in self.autos if i is not None)
-        error_list = uniq(i for i in self.errors if i is not None)
-        if error_list:
-            return '\n'.join(error_list)
-        return '\n'.join(data_set)
+
+        error_list = unique(i for i in self.errors if i is not None)
+        return '\n'.join(error_list)
 
 
 class SchemaMissingKeyError(SchemaError):
@@ -48,7 +46,7 @@ class SchemaUnexpectedTypeError(SchemaError):
     pass
 
 
-class DataUnmatchedTypeError(SchemaError):
-    """Error Should be raised when a datum is not matched within the type.
-    """
+class SchemaUnrecognizableTypeError(SchemaError):
+    """Error Should be raised when an unrecognizable type is detected
+    within the given schema structure."""
     pass
