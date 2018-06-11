@@ -16,7 +16,9 @@ __all__ = ['Validator']
 
 class Validator:
     """
-
+    Static class contains one public method
+    to validate and check structure of transaction
+    data with transaction schema.
     """
 
     @staticmethod
