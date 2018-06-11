@@ -1,0 +1,129 @@
+{
+    "_id" : "string",
+    "business_id" : "string",
+    "location_id" : "string",
+    "transaction_id" : "string",
+    "receipt_id" : "string",
+    "serial_number" : "string",
+    "dining_option" : "string",
+    "creation_time" : "string",
+    "discount_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "additive_tax_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "inclusive_tax_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "refunded_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "tax_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "tip_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "total_collected_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "creator" : {
+        "id" : "string",
+        "name" : "string",
+        "email" : "email"
+    },
+    "tender" : {
+        "type" : "tender",
+        "name" : "string",
+        "total_money" : {
+            "amount" : "float",
+            "currency" : "currency"
+        }
+    },
+    "taxes" : [ 
+        {
+            "id" : "string",
+            "name" : "string",
+            "rate" : "float",
+            "inclusion_type" : "inclusion",
+            "is_custom_amount" : "boolean",
+            "applied_money" : {
+                "amount" : "float",
+                "currency" : "currency"
+            }
+        }
+    ],
+    "itemization" : [ 
+        {
+            "id" : "string",
+            "name" : "string",
+            "quantity" : "integer",
+            "total_money" : {
+                "amount" : "float",
+                "currency" : "currency"
+            },
+            "single_quantity_money" : {
+                "amount" : "float",
+                "currency" : "currency"
+            },
+            "gross_sales_money" : {
+                "amount" : "float",
+                "currency" : "currency"
+            },
+            "discount_money" : {
+                "amount" : "float",
+                "currency" : "currency"
+            },
+            "net_sales_money" : {
+                "amount" : "float",
+                "currency" : "currency"
+            },
+            "category" : {
+                "id" : "string",
+                "name" : "string"
+            },
+            "variation" : {
+                "id" : "string",
+                "name" : "string",
+                "pricing_type" : "string",
+                "price_money" : {
+                    "amount" : "float",
+                    "currency" : "currency"
+                }
+            },
+            "taxes" : [ 
+                {
+                    "id" : "string",
+                    "name" : "string",
+                    "rate" : "float",
+                    "inclusion_type" : "inclusion",
+                    "is_custom_amount" : "boolean",
+                    "applied_money" : {
+                        "amount" : "float",
+                        "currency" : "currency"
+                    }
+                }
+            ],
+            "discounts" : [],
+            "modifiers" : [ 
+                {
+                    "id" : "string",
+                    "name" : "string",
+                    "quantity" : "integer",
+                    "applied_money" : {
+                        "amount" : "float",
+                        "currency" : "currency"
+                    }
+                }
+            ]
+        }
+    ]
+}
