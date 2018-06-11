@@ -1,6 +1,6 @@
 """
 error.py
- is a class for validating schema with data.
+ is a module contains schema error exceptions.
 
         Created on  :   June 10, 2018
         Author      :   Mohammad Alrefai

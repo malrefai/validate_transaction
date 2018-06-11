@@ -1,6 +1,6 @@
 """
 schema.py
- is a library for validating transactions.
+ is a class for validating transactions.
 
         Created on  :   June 9, 2018
         Author      :   Mohammad Alrefai

@@ -1,6 +1,6 @@
 """
 demo.py
-
+    is an app demo to test library that validate transactions
         Created on  :   June 9, 2016
         Author      :   Mohammad Alrefai
 """
@@ -13,8 +13,8 @@ from matcher import Schema
 def main():
 
     args = dict()
-    args['schema'] = './demo/transactionSchemaTest.json'
-    args['file'] = './demo/transactionDataTest.json'
+    args['schema'] = './demo/transactionSchema.json'
+    args['file'] = './demo/transactionData.json'
 
     # Read JSON schema into the schema variable
     with open(args['schema']) as f:
