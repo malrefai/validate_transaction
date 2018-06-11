@@ -34,12 +34,12 @@ class Schema:
         Return whether the given data has passed all the validations
         that were specified in the given schema.
 
-        :param data:
+        :param data: dictionary
         :return: boolean
         """
 
         try:
-            Validator.check_structure(self._schema, data, self._error)
+            Validator.check_structure(self._schema, data)
         except SchemaError as e:
             print(e)
             return False
