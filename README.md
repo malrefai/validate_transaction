@@ -1,4 +1,6 @@
 # stocksMarkets
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmalrefai%2Fvalidate_transaction.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmalrefai%2Fvalidate_transaction?ref=badge_shield)
+
 
 stocksMarkets is a scraping stocks application
 
@@ -53,3 +55,7 @@ Make sure you install all the required dependencies before running stocksMarkets
 [0]: https://www.python.org/
 [1]: https://www.python.org/downloads/
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmalrefai%2Fvalidate_transaction.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmalrefai%2Fvalidate_transaction?ref=badge_large)
