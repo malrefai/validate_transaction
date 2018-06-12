@@ -1,0 +1,14 @@
+{
+    "_id" : "string",
+    "business_id" : "String",
+    "location_id" : "string",
+    "transaction_id" : "string",
+    "receipt_id" : "string",
+    "serial_number" : "string",
+    "dining_option" : "string",
+    "discount_money" : {
+        "amount" : "float",
+        "currency" : "currency"
+    },
+    "email": "email"
+}
