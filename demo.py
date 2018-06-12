@@ -7,25 +7,25 @@ demo.py
 
 import json
 
-from matcher import Schema
+import validate_transaction
 
 
 def main():
 
     args = dict()
-    args['schema'] = './demo/transactionSchema.json'
-    args['file'] = './demo/transactionData.json'
+    args['schema'] = './demo/files/transactionSchema.json'
+    args['data'] = './demo/files/transactionData.json'
 
     # Read JSON schema into the schema variable
     with open(args['schema']) as f:
         schema = json.load(f)
 
     # Read JSON data into the data variable
-    with open(args['file']) as f:
+    with open(args['data']) as f:
         data = json.load(f)
 
-    result = "valid" if Schema(schema).is_valid(data) else "invalid"
-    print("The transaction data is %s upon given schema" % result)
+    result = "Valid" if validate_transaction.Schema(schema).is_valid(data) else "Invalid"
+    print("%s transaction data upon on given schema" % result)
 
     print('Good Bye !!!')
 
