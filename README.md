@@ -1,8 +1,11 @@
-# validateTransaction
+[![Build Status](https://travis-ci.org/malrefai/validate_transaction.svg?branch=develop)](https://travis-ci.org/malrefai/validate_transaction)
+[![codecov](https://codecov.io/gh/malrefai/validate_transaction/branch/develop/graph/badge.svg)](https://codecov.io/gh/malrefai/validate_transaction)
 
-validateTransaction is a library to validate transactions
+# validate_transaction
 
-**validateTransaction** built with [Python][0]
+validate_transaction is a library to validate transactions
+
+**validate_transaction** built with [Python][0]
 
 ## Technology Stack
 
@@ -31,7 +34,7 @@ validateTransaction is a library to validate transactions
 
     # Create a project directory 
 	# Clone validateTransaction repository into project directory
-    $ git clone git@github.com:malrefai/validateTransaction.git <YOUR_PROJECT_DIR>
+    $ git clone git@github.com:malrefai/validate_transaction.git <YOUR_PROJECT_DIR>
     $ cd <YOUR_PROJECT_DIR>
 
 
@@ -39,7 +42,7 @@ validateTransaction is a library to validate transactions
 
 On the project root there is a requirements.txt file. 
 
-Make sure you install all the required dependencies before running validateTransaction
+Make sure you install all the required dependencies before running validate_transaction
 
     $ pip install -r requirements.txt
 
