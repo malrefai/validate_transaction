@@ -41,7 +41,8 @@ class Schema:
         try:
             Validator.check_structure(self._schema, data)
         except SchemaError as e:
-            print(e)
+            print("%s: %s" % (type(e).__name__, e))
             return False
         else:
             return True
+

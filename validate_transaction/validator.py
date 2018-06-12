@@ -43,7 +43,7 @@ class Validator:
         if Validator._is_dict(schema, data):
             for key in schema:
                 if key not in data:
-                    raise SchemaMissingKeyError("Missing key: %s" % key)
+                    raise SchemaMissingKeyError("the '%s' key is not exists in data" % key)
                 Validator.check_structure(schema[key], data[key])
 
         elif Validator._is_list(schema, data):
@@ -55,9 +55,9 @@ class Validator:
             # structure is the type of data
             if not Validator._is_data_match_type(schema, data):
                 raise SchemaUnexpectedTypeError(
-                    "Mismatch data with type: '%s' is not instance of %s" % (data, schema))
+                    "data does not match type ('%s' is not instance of %s)" % (data, schema))
 
         else:
             # structure is neither a dict, nor list, not TYPES
-            raise SchemaUnrecognizableTypeError("Unrecognizable type in schema: %s" % schema)
+            raise SchemaUnrecognizableTypeError("the '%s' key in given schema is unrecognizable type" % schema)
 

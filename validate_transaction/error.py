@@ -11,7 +11,7 @@ class SchemaError(Exception):
     """Error during Schema validation."""
 
     def __init__(self, errors):
-        self.errors = errors if type(errors) is list else [errors]
+        self._errors = errors if type(errors) is list else [errors]
         Exception.__init__(self, self.code)
 
     @property
@@ -30,7 +30,7 @@ class SchemaError(Exception):
             # This way removes duplicates while preserving the order.
             return [x for x in seq if x not in seen and not seen_add(x)]
 
-        error_list = unique(i for i in self.errors if i is not None)
+        error_list = unique(i for i in self._errors if i is not None)
         return '\n'.join(error_list)
 
 
