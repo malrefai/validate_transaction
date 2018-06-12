@@ -57,7 +57,9 @@ Make sure you install all the required dependencies before running validate_tran
 	
 ## Notes
 
-The library
+You could install the package and make it available for any of your Python apps with:
+
+    $ python setup.py install
 
 ## Copyright
 
